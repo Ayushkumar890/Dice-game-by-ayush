@@ -18,15 +18,15 @@
 
         .heading {
             text-align: center;
-        
-
         }
-
+        
         .heading h1 {
             color: white;
             font-weight: 900;
             font-size: 6rem;
             font-family: cursive;
+            
+            margin: 0px;
         }
 
         h1 {
@@ -36,19 +36,47 @@
         }
 
         .flex{
+            margin-top: 3%;
             display: flex;
             justify-content:center;
             gap: 30%;
         }
+        @media(max-width:500px){
+            .flex{
+                gap: 10%;
+                margin-top: 10%;
+                display: block;
+                text-align: center;
+
+            }
+            img{
+                width: 100px;
+            }
+            .heading h1{
+                font-size: 60px;
+            }
+            .player1 h1{
+                font-size: 30px;
+            }
+            .player2 h1{
+                font-size: 30px;
+            }
+        }
         .btn{
+            color: white;
+
             font-size: 30px;
+            background-color: blue;
             padding: 10px 30px;
             border-radius: 100px;
+            box-shadow: 5px 5px 5px white;
+            border: none;
             }
             .btn:hover{
-                background-color: rgb(227, 134, 134);
+                background-color: rgb(123, 31, 243);
                 font-size: 35px;
                 transition: 0.6s ease;
+                z-index: 99;
             }
     </style>
 </head>
@@ -56,22 +84,34 @@
 <body>
     <div class="heading">
         <h1 class="win">
-            start
+            Start
         </h1>
     </div>
-
     <div class="flex">
         <div class="player1">
             <h1>Player 1</h1>
-            <img src="images\dice6.png" alt="" id="dice1" >
+            <br>
+        
+            <img style="box-shadow: 0px 0px 30px 1px white
+            ; border: 2px solid rgb(0, 0, 0);" src="images\dice6.png" alt="" id="dice1" >
         </div>
         <div class="player2">
             <h1>Player 2</h1>
-            <img  src=" images\dice6.png" alt="" id="dice2">
+            <br>
+            <img style="box-shadow: 0px 0px 30px 1px white
+            ; border: 2px solid rgb(0, 0, 0);"  src=" images\dice6.png" alt="" id="dice2">
         </div>
     </div>
     <div style="text-align: center; margin-top: 100px;">
         <button class="btn" onclick="ramdomimage()">Start</button>
+<br><br>
+        <footer>
+            <div style="" >
+                <p style="color: rgb(119, 43, 195)
+                ;font-size: 30px;">Made by ayush</p>
+            </div>
+            <br>
+        </footer>
 
     <script src="index.js"></script>
 </body>
