@@ -8,10 +8,10 @@ function ramdomimage(){
     document.querySelector('#dice1').setAttribute('src',a);
     document.querySelector('#dice2').setAttribute('src',b);
     if(d1>d2){
-        document.querySelector(".win").innerHTML='player1 win'
+        document.querySelector(".win").innerHTML='Player1 win'
     }
     else if(d2>d1){
-        document.querySelector(".win").innerHTML='player2 win'
+        document.querySelector(".win").innerHTML='Player2 win'
     }
     else if(d2==d1){
         document.querySelector(".win").innerHTML='Draw'
