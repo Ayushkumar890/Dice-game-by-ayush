@@ -11,7 +11,7 @@ function ramdomimage(){
         document.querySelector(".win").innerHTML='Player1 win'
     }
     else if(d2>d1){
-        document.querySelector(".win").innerHTML='Player2 win'
+        document.querySelector(".win").innerHTML='player2 win'
     }
     else if(d2==d1){
         document.querySelector(".win").innerHTML='Draw'
